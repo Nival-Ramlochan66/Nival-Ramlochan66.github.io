@@ -34,7 +34,7 @@ body {
     top: 145px;
     left: 160px;
     transform-origin: left center;
-    transform: rotate(-90deg);
+    animation: rotate-minute 10s linear forwards;
 }
 
 .minute-hand img {
@@ -49,10 +49,28 @@ body {
     top: 145px;
     left: 160px;
     transform-origin: left center;
-    transform: rotate(0deg);
+    animation: rotate-hour 10s linear forwards;
 }
 
 .hour-hand img {
     width: 100%;
     height: 100%;
+}
+
+@keyframes rotate-minute {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotate-hour {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
 }
