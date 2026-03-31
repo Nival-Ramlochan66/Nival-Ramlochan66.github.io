@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-window {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 2px solid #d9534f;
+    border-radius: 4px;
+    width: 260px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.desc {
+    font-size: 0.85rem;
+    color: #444444;
+    text-align: center;
+}
+
+.btn-modal {
+    display: inline-block;
+    background-color: #e8a000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.btn-modal:hover {
+    background-color: #c88800;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay:target {
+    display: flex;
+}
+
+.modal-blue {
+    background-color: rgba(52, 100, 152, 0.82);
+}
+
+.modal-green {
+    background-color: rgba(90, 145, 60, 0.82);
+}
+
+.modal-box {
+    background-color: #ffffff;
+    width: 480px;
+    max-width: 90%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f4a7b9;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.modal-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    color: #333333;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.modal-close:hover {
+    background-color: #dddddd;
+}
+
+.modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.modal-body-orange {
+    background-color: #f5a623;
+}
+
+.modal-body-blue {
+    background-color: #add8e6;
+}
+
+.modal-body p {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    color: #333333;
+    line-height: 1.6;
+    border-radius: 3px;
+}
+
+.modal-body img {
+    width: 240px;
+    height: auto;
+    border-radius: 3px;
+}
